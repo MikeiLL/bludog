@@ -15,7 +15,9 @@ $sage_includes = [
   'lib/setup.php',     // Theme setup
   'lib/titles.php',    // Page titles
   'lib/wrapper.php',   // Theme wrapper class
-  'lib/customizer.php' // Theme customizer
+  'lib/customizer.php', // Theme customizer
+  'lib/wp_bootstrap_navwalker.php', // Bootstrap nav code
+  'lib/wp_bs_drawer_navwalker.php', // Bootstrap drawer nav code
 ];
 
 foreach ($sage_includes as $file) {
@@ -26,3 +28,7 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'sage' ),
+) );
