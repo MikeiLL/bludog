@@ -45,12 +45,17 @@ class wp_bs_drawer_navwalker extends Walker_Nav_Menu {
 		 * comparison that is not case sensitive. The strcasecmp() function returns
 		 * a 0 if the strings are equal.
 		 */
-		if ( strcasecmp( $item->attr_title, 'divider' ) == 0 && $depth === 1 ) {
+
+		if ( strcasecmp( $item->attr_title, 'divider' ) == 0 && $depth == 0 ) {
 			$output .= $indent . '<li role="presentation" class="divider">';
-		} else if ( strcasecmp( $item->title, 'divider') == 0 && $depth === 1 ) {
+		} else if ( strcasecmp( $item->title, 'divider') == 0 && $depth == 0 ) {
 			$output .= $indent . '<li role="presentation" class="divider">';
-		} else if ( strcasecmp( $item->attr_title, 'dropdown-header') == 0 && $depth === 1 ) {
-			$output .= $indent . '<li role="presentation" class="dropdown-header">' . esc_attr( $item->title );
+		} else if ( strcasecmp( $item->attr_title, 'drawer-heading') == 0 && $depth == 0 ) {
+			$output .= $indent . '<li><h3 class="drawer-heading">' . esc_attr( $item->title ) . '</h3>';
+		} else if ( strcasecmp( $item->attr_title, 'drawer-title') == 0 && $depth == 0 ) {
+			$output .= $indent . '<li><h2 class="drawer-title">' . esc_attr( $item->title ) . '</h2>';
+		} else if ( strcasecmp( $item->attr_title, 'text-content') == 0 && $depth === 0 ) {
+			$output .= $indent . '<li><p class="text-content">' . esc_attr( $item->title ) . '</h3>';
 		} else if ( strcasecmp($item->attr_title, 'disabled' ) == 0 ) {
 			$output .= $indent . '<li role="presentation" class="disabled"><a href="#">' . esc_attr( $item->title ) . '</a>';
 		} else {
