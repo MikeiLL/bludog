@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default" role="navigation">
     <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-    <div id="drawerExample" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
+    <div id="drawerExample" class="drawer drawer-right dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
         <div class="drawer-controls">
             <a href="#drawerExample" data-toggle="drawer" href="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="btn btn-primary btn-sm">Menu</a>
         </div>
