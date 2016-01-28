@@ -45,7 +45,16 @@
 .drawer-fullnav li a, .drawer-nav li a {
     color: $gray-darker;
 }
-
+.nav > li > a:focus, .nav > li > a:hover {
+    background-color: $brand-info;
+}
+.drawer-fullnav li a:focus, .drawer-fullnav li a:hover, .drawer-fullnav li.active a, .drawer-nav li a:focus, .drawer-nav li a:hover, .drawer-nav li.active a {
+    background-color: $gray;
+    color: $gray-darker;
+}
+.drawer-contents {
+    background-color: $brand-info;
+}
 
 @media screen and (min-width: 40em) {
 
