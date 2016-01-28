@@ -1,0 +1,60 @@
+.navbar-brand {
+    float: left;
+    line-height: 25px;
+    padding: 42px 15px;
+    margin-top: 1rem;
+}
+.navbar-brand, .text-hide {
+    background-color: transparent;
+    border: 0 none;
+    color: transparent;
+    font: 0px/0 a;
+    text-shadow: none;
+}
+.navbar-brand {
+    background-image: url("../images/RicKindleLogo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 125px 93px;
+    height: 101px;
+    margin-top: 0rem;
+    width: 125px;
+}
+.navbar {
+    border-radius: 0px;
+    background-color:$gray-base;
+}
+.navbar-default {
+    background-color: $gray-base;
+    border-color: $gray-base;
+}
+.drawer-right .drawer-controls {
+    margin-left: -26.6667%;
+}
+
+.drawer-heading {
+    border-bottom: 1px solid $gray;
+    color: $brand-primary;
+    padding: 10px 15px;
+    background-color: $brand-success;
+}
+
+
+@media screen and (min-width: 40em) {
+
+.navbar-brand {
+    background-image: url("../images/RicKindleLogo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 250px 185px;
+    height: 185px;
+    margin-top: 0rem;
+    width: 250px;
+    }
+}
+@media screen and (min-width: 60em) {
+	.tagline {
+		font-size: 3.2rem;
+		margin-left: -45rem;
+	}
+}

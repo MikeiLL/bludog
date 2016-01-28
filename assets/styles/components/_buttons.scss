@@ -1,0 +1,11 @@
+.btn-primary, .comment-form input[type="submit"] {
+    background-color: $brand-primary;
+    border-color: $brand-success;
+    color: $brand-success;
+}
+
+.btn-primary:hover, .comment-form input[type="submit"] {
+    background-color: darken($brand-primary, 13.7%);
+    border-color: lighten($brand-success, 10%);
+    color: lighten($brand-success, 10%);
+}

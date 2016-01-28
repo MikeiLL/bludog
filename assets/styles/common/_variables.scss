@@ -5,5 +5,16 @@ $icon-font-path:        "../fonts/";
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+$gray-base:              hsla(0, 0%, 35%, 1) !default; // #595959
+$gray-darker:            darken($gray-base, 20%) !default; // #
+$gray-dark:              darken($gray-base, 13.5%) !default;   // #
+$gray:                   lighten($gray-base, 33.5%) !default; // #
+$gray-light:             lighten($gray-base, 46.7%) !default; // #
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #
+
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:         hsla(246, 31%, 62%, 1) !default; // #8781BD Purple 1
+$brand-success:         hsla(47, 100%, 50%, 1) !default; //#FFC700 Gold
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
