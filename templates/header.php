@@ -29,7 +29,7 @@
           ?>
 
               <div class="drawer-footer">
-                  <small>&copy; Mike iLL/mZoo.org</small>
+                  <small>&copy; Ric Kindle</small>
               </div>
           </div>
       </div>
