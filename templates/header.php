@@ -5,9 +5,9 @@
 <header class="banner">
     <nav class="navbar navbar-default" role="navigation">
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-      <div id="drawerExample" class="drawer drawer-right dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
+      <div id="navigationMenu" class="drawer drawer-right dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="navigationMenu">
           <div class="drawer-controls" style="margin-top:1rem;">
-              <a href="#drawerExample" data-toggle="drawer" href="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="btn btn-primary btn-sm">Menu</a>
+              <a href="#navigationMenu" data-toggle="drawer" href="#navigationMenu" aria-foldedopen="false" aria-controls="navigationMenu" class="btn btn-primary btn-sm">Menu</a>
           </div>
           <div class="drawer-contents">
               <div class="drawer-heading">
