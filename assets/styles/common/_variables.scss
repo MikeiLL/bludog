@@ -9,8 +9,8 @@ $gray-base:              hsla(0, 0%, 35%, 1) !default; // #595959
 $gray-darker:            darken($gray-base, 20%) !default; // #
 $gray-dark:              darken($gray-base, 13.5%) !default;   // #
 $gray:                   lighten($gray-base, 33.5%) !default; // #
-$gray-light:             lighten($gray-base, 46.7%) !default; // #
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #
+$gray-light:             hsla(0, 0%, 74%, 1) !default; // #
+$gray-lighter:           lighten($gray-light, 93.5%) !default; // #
 
 // Colors
 $brand-primary:         hsla(246, 31%, 62%, 1) !default; // #8781BD Purple 1

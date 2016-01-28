@@ -32,11 +32,18 @@
     margin-left: -26.6667%;
 }
 
-.drawer-heading {
+.drawer-heading, .drawer-title {
     border-bottom: 1px solid $gray;
     color: $brand-primary;
     padding: 10px 15px;
     background-color: $brand-success;
+}
+
+.drawer-contents {
+    background-color: $gray-light;
+}
+.drawer-fullnav li a, .drawer-nav li a {
+    color: $gray-darker;
 }
 
 
